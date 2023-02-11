@@ -11,3 +11,5 @@ let fruits = [
   new Fruit('apple', 'green', false),
   new Fruit('orange', 'orange', false),
 ]
+
+alert(fruits)

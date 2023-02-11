@@ -12,3 +12,11 @@ let fruits = [
   new Fruit('orange', 'orange', false),
 ]
 
+fruits.sort((a, b) => {
+  if (a.type < b.type){
+    return -1;
+  }
+  return 1;
+})
+
+console.log(fruits)

@@ -16,15 +16,4 @@ let fruits = [
 
 console.log(fruits)
 
-const fruitsCopy = [...fruits]
-
-const yellowFruits = fruits.filter(fruit => fruit.colorsArray.includes('yellow'));
-
-console.log(yellowFruits)
-
-for (let yellowFruit of yellowFruits){
-  yellowFruit.colorsArray.splice(yellowFruit.colorsArray.indexOf(color => color === 'yellow'), 1, 'red')
-  // yellowFruit.colorsArray[yellowFruit.colorsArray.indexOf(color => color === 'yellow')] = 'red'
-}
-
-console.log(fruits)
+// ovo bez filtera - samo petljon kroz sva voća - ispisat staro - prominit - ispisat novo
