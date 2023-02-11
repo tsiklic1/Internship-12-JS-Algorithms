@@ -16,4 +16,13 @@ let fruits = [
 
 console.log(fruits)
 
-// ovo bez filtera - samo petljon kroz sva voća - ispisat staro - prominit - ispisat novo
+
+for (let fruit of fruits){
+  if(fruit.colorsArray.includes('yellow')){
+    console.log('Old fruit')
+    console.log(fruit)
+    fruit.colorsArray.splice(fruit.colorsArray.indexOf('yellow'), 1, 'red')
+    console.log('New fruit')
+    console.log(fruit)
+  }
+}
