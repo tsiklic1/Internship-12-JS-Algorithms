@@ -17,3 +17,5 @@ let fruits = [
 
 const yellowFruits = fruits.filter(fruit => fruit.colorsArray.includes('yellow'));
 console.log(yellowFruits)
+
+alert("Fruits that have yellow color:" + JSON.stringify(yellowFruits, null, 4))

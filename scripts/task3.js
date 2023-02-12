@@ -14,3 +14,5 @@ let fruits = [
 
 const sameNameAndColorFruits = fruits.filter(fruit => fruit.type === fruit.color)
 console.log(sameNameAndColorFruits)
+
+alert("Fruits with the same name and color" + JSON.stringify(sameNameAndColorFruits, null, 4))

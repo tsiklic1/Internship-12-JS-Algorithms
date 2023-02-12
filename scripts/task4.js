@@ -14,15 +14,15 @@ let fruits = [
   new Fruit('watermelon', ['green', 'red'], false),
 ];
 
-console.log(fruits)
+const fruitsCopy = JSON.parse(JSON.stringify(fruits));
 
+for (let i=0; i<fruits.length; i++){
 
-for (let fruit of fruits){
-  if(fruit.colorsArray.includes('yellow')){
+  if(fruits[i].colorsArray.includes('yellow')){
     console.log('Old fruit')
-    console.log(fruit)
-    fruit.colorsArray.splice(fruit.colorsArray.indexOf('yellow'), 1, 'red')
+    console.log(fruitsCopy[i])
+    fruits[i].colorsArray.splice(fruits[i].colorsArray.indexOf('yellow'), 1, 'red')
     console.log('New fruit')
-    console.log(fruit)
+    console.log(fruits[i])
   }
 }

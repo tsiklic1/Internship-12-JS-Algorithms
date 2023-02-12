@@ -12,7 +12,7 @@ let fruits = [
   new Fruit('orange', 'orange', false),
 ]
 
-fruits.sort((a, b) => {
+const sortedFruits = fruits.sort((a, b) => {
   if (a.type < b.type){
     return -1;
   }
@@ -20,3 +20,4 @@ fruits.sort((a, b) => {
 })
 
 console.log(fruits)
+alert(JSON.stringify(sortedFruits, null, 4))

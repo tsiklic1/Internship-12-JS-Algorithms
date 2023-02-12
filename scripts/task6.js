@@ -8,7 +8,7 @@ class Fruit{
 
 let fruits = [
   new Fruit('banana', 'yellow', false),
-  new Fruit('apple', 'green', false),
+  new Fruit('apple', 'green', true),
   new Fruit('orange', 'orange', true),
 ]
 
@@ -24,9 +24,9 @@ if(fruits.some(fruit => !fruit.isForSale)){
 
   alert('Indices: ' + listOfNotForSaleIndexes)
 
-  const notForSaleFruits = fruits.filter(fruit =>fruit.isForSale)
+  const forSaleFruits = fruits.filter(fruit =>fruit.isForSale)
 
-  alert('Fruits available for sale: ' + JSON.stringify(notForSaleFruits, null, 4));
+  alert('Fruits available for sale: ' + JSON.stringify(forSaleFruits, null, 4));
 
 }
 
