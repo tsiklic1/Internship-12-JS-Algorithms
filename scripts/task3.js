@@ -10,6 +10,9 @@ let fruits = [
   new Fruit('banana', 'yellow', false),
   new Fruit('apple', 'green', false),
   new Fruit('orange', 'orange', false),
+  new Fruit('grape', 'orange', false),
+  new Fruit('strawberry', 'red', false),
+  new Fruit('peach', 'orange', false)
 ]
 
 const sameNameAndColorFruits = fruits.filter(fruit => fruit.type === fruit.color)

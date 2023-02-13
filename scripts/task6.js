@@ -10,6 +10,9 @@ let fruits = [
   new Fruit('banana', 'yellow', false),
   new Fruit('apple', 'green', true),
   new Fruit('orange', 'orange', true),
+  new Fruit('grape', 'orange', false),
+  new Fruit('strawberry', 'red', false),
+  new Fruit('peach', 'orange', false)
 ]
 
 alert(JSON.stringify(fruits, null, 4));

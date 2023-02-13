@@ -10,6 +10,9 @@ let fruits = [
   new Fruit('banana', 'yellow', false),
   new Fruit('apple', 'green', false),
   new Fruit('orange', 'orange', false),
+  new Fruit('grape', 'orange', false),
+  new Fruit('strawberry', 'red', false),
+  new Fruit('peach', 'orange', false)
 ]
 
 const sortedFruits = fruits.sort((a, b) => {
@@ -19,5 +22,4 @@ const sortedFruits = fruits.sort((a, b) => {
   return 1;
 })
 
-console.log(fruits)
-alert(JSON.stringify(sortedFruits, null, 4))
+console.log(sortedFruits)
